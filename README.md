@@ -1,5 +1,7 @@
 # space-shooter
 
+![space-shooter-ikn](https://cloud.githubusercontent.com/assets/5364674/23105400/d3bb87d0-f6de-11e6-83c8-c0ea952a3efa.png)
+
 English
 -------
 Simple space shooter game from [Unity](https://unity3d.com/) workshops.
