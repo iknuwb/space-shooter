@@ -7,6 +7,10 @@ public class Controller : MonoBehaviour {
 	public Rigidbody2D playerPhysics;
 	public Transform playerUp;
 
+
+	public int lives;
+
+
 	// Use this for initialization
 	void Start () {
 		//playerPhysics=player.GetComponent<Rigidbody2D>();

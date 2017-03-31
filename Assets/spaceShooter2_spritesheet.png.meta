@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: 091be672fe839c641b6a9de5194f66bc
-timeCreated: 1487528544
+timeCreated: 1490284798
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
@@ -8,6 +8,7 @@ TextureImporter:
     21300002: spaceShooter2_spritesheet_1
     21300004: spaceShooter2_spritesheet_2
     21300006: spaceShooter2_spritesheet_3
+    21300008: spaceShooter2_spritesheet_4
   serializedVersion: 4
   mipmaps:
     mipMapMode: 0
@@ -176,6 +177,19 @@ TextureImporter:
         y: 83
         width: 211
         height: 217
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: spaceShooter2_spritesheet_4
+      rect:
+        serializedVersion: 2
+        x: 1092
+        y: 1052
+        width: 20
+        height: 35
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
