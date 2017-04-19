@@ -9,6 +9,5 @@ public class RocketCollide : MonoBehaviour {
 			Destroy (other.gameObject);
 			Destroy (this.gameObject);
 		}
-
 	}
 }
