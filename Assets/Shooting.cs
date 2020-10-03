@@ -19,7 +19,7 @@ public class Shooting : MonoBehaviour {
 			if (timeLeft > timer) {
 				GameObject rocketShot = Instantiate (rocket,new Vector3(startRocket.position.x,startRocket.position.y,startRocket.position.z),Quaternion.identity);
 				rocketShot.transform.rotation = player.rotation;
-				rocketShot.GetComponent<Rigidbody2D> ().AddForce ((startRocket.position-player.position)*5f, ForceMode2D.Impulse);
+				rocketShot.GetComponent<Rigidbody2D> ().AddForce ((startRocket.position-player.position)*10f, ForceMode2D.Impulse);
 				timeLeft = 0;
 			} else {
 				timeLeft += Time.deltaTime;
