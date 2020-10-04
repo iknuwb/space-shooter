@@ -5,7 +5,7 @@ using UnityEngine;
 public class Collide : MonoBehaviour {
 
 	public int lives;
-	public GameObject[] liveGraph;
+	public GameObject life1 , lif2 ,life3 ,gameover , player ,metoids;
 
 	void OnTriggerEnter2D(Collider2D other){
 		if(other.transform.tag == "Asteroid"){
@@ -18,24 +18,27 @@ public class Collide : MonoBehaviour {
 
 	void Update(){
 		if(lives == 3){
-			liveGraph [0].GetComponent<SpriteRenderer> ().enabled = true;
-			liveGraph [1].GetComponent<SpriteRenderer> ().enabled = true;
-			liveGraph [2].GetComponent<SpriteRenderer> ().enabled = true;
+			life1.SetActive(true);
+			lif2.SetActive(true);
+			life3.SetActive(true);
 		}
 		else if(lives == 2){
-			liveGraph [0].GetComponent<SpriteRenderer> ().enabled = true;
-			liveGraph [1].GetComponent<SpriteRenderer> ().enabled = true;
-			liveGraph [2].GetComponent<SpriteRenderer> ().enabled = false;
+			life1.SetActive(true);
+			lif2.SetActive(true);
+			life3.SetActive(false);
 		}
 		else if(lives == 1){
-			liveGraph [0].GetComponent<SpriteRenderer> ().enabled = true;
-			liveGraph [1].GetComponent<SpriteRenderer> ().enabled = false;
-			liveGraph [2].GetComponent<SpriteRenderer> ().enabled = false;
+			life1.SetActive(true);
+			lif2.SetActive(false);
+			life3.SetActive(false);
 		}
 		else if(lives == 0){
-			liveGraph [0].GetComponent<SpriteRenderer> ().enabled = false;
-			liveGraph [1].GetComponent<SpriteRenderer> ().enabled = false;
-			liveGraph [2].GetComponent<SpriteRenderer> ().enabled = false;
+			life1.SetActive(false);
+			lif2.SetActive(false);
+			life3.SetActive(false);
+			gameover.SetActive(true);
+			metoids.SetActive(false);
+			player.SetActive(false);
 		}
 	}
 
